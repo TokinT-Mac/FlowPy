@@ -1,0 +1,39 @@
+Map System Design
+
+On Load
+-Generate/Load Map
+-Generate Static Object Map
+
+On Step
+-Generate/FromCache Object Map
+-Generate Moving Object Map
+-Generate Cost Field
+-Generate Flow Field
+
+
+Base Movement Types
+-Walking
+-Wheeled
+-Flying
+-Sailing
+
+Base Cost Field Ranges for Movement Type [No Resistance(0 - 255) Impassable]
+-Walking
+	Normal Speed	- 	[ 0 - 24]
+	Half Speed 		- 	[25 - 49]
+	Crawl Speed 	-	[50 - 75]
+	
+-Wheeled
+	Normal Speed	-	[ 0 - 50]
+	Half Speed		-	[50 - 100]
+	Crawl Speed		-	[100 - 125]
+	
+-Flying
+	Normal Speed	-	[0 - 254]
+	
+-Sailing
+	Normal Speed	-	[0 - 100]
+	Half Speed		-	[100 - 200]
+	Crawl Speed		-	[200 - 254]
+	
+
